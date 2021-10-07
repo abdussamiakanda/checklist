@@ -24,6 +24,7 @@ function checkAuthState(){
       document.getElementById('stat_btn').style.display="none";
       document.getElementById('logout_btn').style.display="none";
       document.getElementById('intro').style.display="block";
+      document.getElementById('checklist').style.display="none";
     }
   })
 }
