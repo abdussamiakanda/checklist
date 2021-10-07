@@ -5,7 +5,7 @@ var userdata = null;
 
 // USER AUTHENTICATION FUNCTIONS
 
-// checkAuthState();
+checkAuthState();
 
 function GoogleLogin() {
   firebase.auth().signInWithPopup(provider).then(res=>{
