@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>CheckList</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="CheckList"/>
+    <meta property="og:description" content="A free self development tool"/>
+    <link rel="shortcut icon" href="./assets/image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1421ad6393.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+  </head>
+  <body>
+
+    <section class="header-container">
+      <h1>
+        <i class="bar-icon fas fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        <a href="./">CheckList</a>
+      </h1>
+      <h3 class="header-mid" id="header-mid"></h3>
+      <div class="menu">
+        <div class="menu-item" onclick="GoogleLogin()" id="login_btn">Login</div>
+        <div class="menu-item" onclick="GoogleLogin()" id="join_btn">Sign Up</div>
+        <div class="menu-item hide" id="stat_btn">Statistics</div>
+        <div class="menu-item hide" onclick="GoogleLogout()" id="logout_btn">Logout</div>
+      </div>
+    </section>
+
+    <section class="intro hide" id="intro">
+      <div id="particles">
+        <div id="webcoderskull">
+          <h1>Build habits and Develop yourself</h1>
+          <p onclick="GoogleLogin()">Sign Up for Free</p>
+        </div>
+      </div>
+      <h1></h1>
+    </section>
+
+    <section id="checklist" class="hide">
+      <div class="checklist">
+        <div class="lists">
+          <h2>To Do List</h2>
+          <div class="list" id="todo">
+            <div class="item">
+              <label class="checkcont">I agree to the
+                <input type="checkbox" id="consent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="lists">
+          <h2>Completed</h2>
+          <div class="list" id="done">
+
+            <div class="item">
+              <label class="checkcont">I agree to the
+                <input type="checkbox" id="consent">
+                <span class="checkmark"></span>
+              </label>
+              <div class="permissions">
+                <i class="icon fas fa-pen-square"></i>
+                <i class="icon fas fa-trash-alt"></i>
+              </div>
+            </div>
+
+            <div class="item">
+              <label class="checkcont">I agree to the
+                <input type="checkbox" id="consent">
+                <span class="checkmark"></span>
+              </label>
+              <div class="permissions">
+                <i class="icon fas fa-pen-square"></i>
+                <i class="icon fas fa-trash-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="addnew">
+        <i class="fas fa-plus"></i>
+      </div>
+    </section>
+
+    <section id="addnewtodo" class="">
+      
+    </section>
+
+    <section style="margin-top:30px;">
+      <div class="alerts" id="alerts"></div>
+    </section>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/particle.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
