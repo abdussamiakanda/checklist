@@ -247,6 +247,68 @@ h1,h2,h3,h4,h5,h6,p{
       0px 0px 10px rgba(255,255,255,1);
   }
 
+  .addnewform{
+    margin: 5px;
+    padding-top: 20px;
+    border-radius: 8px;
+  }
+  .addnewform div{
+    padding: 10px 20px;
+    text-align: left;
+  }
+  .addnewform form{
+    text-align: center;
+  }
+  .addnewform input {
+    box-sizing:border-box;
+    width: 98%;
+    border: 1px solid rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.05);
+    color: var(--no4);
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 5px;
+  }
+  .addnewform input:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .addnewform input:focus {
+    outline: none;
+    background-color: rgba(0,0,0,0.1);
+  }
+  .addnewform select {
+    box-sizing:border-box;
+    width: 98%;
+    border: 1px solid rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.05);
+    color: var(--no4);
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 5px;
+  }
+  .addnewform select:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .addnewform select:focus {
+    outline: none;
+    background-color: rgba(0,0,0,0.1);
+  }
+  .addbutton{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 10px 5px;
+    width: 98%;
+    border: 1px solid rgba(0,0,0,0.6);
+    cursor: pointer;
+  }
+  .addbutton:hover{
+    border: 1px solid rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.1);
+  }
+
 
 
 

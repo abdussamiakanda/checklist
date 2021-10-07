@@ -80,13 +80,29 @@
           </div>
         </div>
       </div>
-      <div class="addnew">
+      <div onclick="addNewToDo()" class="addnew">
         <i class="fas fa-plus"></i>
       </div>
     </section>
 
-    <section id="addnewtodo" class="">
-
+    <section id="addnewtodo" class="addnewtodo hide">
+      <div class="addnewform">
+        <form onSubmit="return false;">
+          <input type="text" id="task" placeholder="New task..." autocomplete="off">
+          <select id="repeat">
+            <option value="">Select a Repeat Method</option>
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Yearly">Yearly</option>
+          </select>
+          <div>Select due date & time:</div>
+          <input type="date" id="date">
+          <input type="time" id="time">
+          <button type="button" class="addbutton" onclick="addToDatabase()">Add</button>
+          <button type="button" class="addbutton" onclick="cancelAdd()">Cancel</button>
+        </form>
+      </div>
     </section>
 
     <section style="margin-top:30px;">

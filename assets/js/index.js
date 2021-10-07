@@ -67,8 +67,23 @@ function GoogleLogout() {
   })
 }
 
+function addNewToDo(){
+  document.getElementById('addnewtodo').style.display="block";
+  document.getElementById('checklist').style.display="none";
+}
 
+function cancelAdd(){
+  document.getElementById('checklist').style.display="block";
+  document.getElementById('addnewtodo').style.display="none";
+}
 
+function addToDatabase(){
+  var task = document.getElementById('task').value;
+  var repeat = document.getElementById('repeat').value;
+  var date = document.getElementById('date').value;
+  var time = document.getElementById('time').value;
+  console.log(task,repeat,date,time);
+}
 
 
 
